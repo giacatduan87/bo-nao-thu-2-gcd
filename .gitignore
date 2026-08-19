@@ -1,0 +1,24 @@
+# Bí mật — KHÔNG BAO GIỜ commit / chia sẻ
+.env
+.secrets/
+*.key
+*.pem
+cred.json
+
+# Rác hệ thống
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+
+# Nhật ký chạy skill (sinh ra khi dùng)
+.claude/skills/**/logs/
+.claude/settings.local.json
+
+# Nội dung riêng của bạn — mặc định KHÔNG đẩy lên git.
+# Muốn tự version hoá bộ não của mình thì xoá 4 dòng dưới.
+output/*
+!output/.gitkeep
+raw/*
+!raw/.gitkeep
+!raw/README.md
