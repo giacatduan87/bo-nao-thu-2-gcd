@@ -20,27 +20,27 @@ Claude tổng hợp từ wiki (kèm trích dẫn `[[nguồn]]`) và **lưu kết
 
 ### c) Gọi skill làm việc chuyên môn
 Gõ `/` để thấy danh sách, hoặc gõ thẳng tên. Ví dụ:
-> `/gcd-mkt-chan-dung-dau-suong` → dựng chân dung khách hàng
-> `/gcd-mkt-hook-video` → viết hook video chống lướt
-> `/gcd-sale-dinh-gia-offer` → định giá & đóng gói offer
+> `/GCD-mkt-chan-dung-dau-suong` → dựng chân dung khách hàng
+> `/GCD-mkt-hook-video` → viết hook video chống lướt
+> `/GCD-sale-dinh-gia-offer` → định giá & đóng gói offer
 
 Xem đầy đủ 23 skill trong `.claude/skills/index.md`.
 
-> **Lần đầu dùng bộ não?** Chạy `/gcd-AIOS-hoan-tat-ho-so-doanh-nghiep` trước — nó điền hồ sơ doanh nghiệp (định vị, ICP, giọng thương hiệu, sản phẩm) vào `wiki/` để mọi skill sau đó không phải hỏi lại từ đầu.
+> **Lần đầu dùng bộ não?** Chạy `/GCD-AIOS-hoan-tat-ho-so-doanh-nghiep` trước — nó điền hồ sơ doanh nghiệp (định vị, ICP, giọng thương hiệu, sản phẩm) vào `wiki/` để mọi skill sau đó không phải hỏi lại từ đầu.
 
 ---
 
 ## 2. Một luồng làm việc mẫu (từ số 0 → có content bán hàng)
 
 1. Thả vài bài viết/video của lĩnh vực bạn vào `raw/` → *"Nạp nguồn"*.
-2. `/gcd-AIOS-hoan-tat-ho-so-doanh-nghiep` → điền hồ sơ doanh nghiệp vào `wiki/` (làm 1 lần, dùng mãi).
-3. `/gcd-mkt-validate-ngach` → đo cầu thật của ngách, quyết định có làm hay không.
-4. `/gcd-sale-bmc-phong-van-chi-tiet` → dựng mô hình kinh doanh 9 ô chi tiết + sơ đồ canvas.
-5. `/gcd-mkt-chan-dung-dau-suong` → hiểu khách hàng, biết nên làm content gì.
-6. `/gcd-mkt-lead-magnet` → chọn 1 mồi câu để thu khách.
-7. `/gcd-mkt-leadpage` hoặc `/gcd-mkt-ladipage` → dựng trang thu lead / bán hàng.
-8. `/gcd-mkt-hook-video` + `/gcd-mkt-content-30-ngay` → sản xuất nội dung đều đặn.
-9. `/gcd-sale-dinh-gia-offer` + `/gcd-sale-ke-hoach-loi-nhuan` → chốt mô hình tiền.
+2. `/GCD-AIOS-hoan-tat-ho-so-doanh-nghiep` → điền hồ sơ doanh nghiệp vào `wiki/` (làm 1 lần, dùng mãi).
+3. `/GCD-mkt-validate-ngach` → đo cầu thật của ngách, quyết định có làm hay không.
+4. `/GCD-sale-bmc-phong-van-chi-tiet` → dựng mô hình kinh doanh 9 ô chi tiết + sơ đồ canvas.
+5. `/GCD-mkt-chan-dung-dau-suong` → hiểu khách hàng, biết nên làm content gì.
+6. `/GCD-mkt-lead-magnet` → chọn 1 mồi câu để thu khách.
+7. `/GCD-mkt-leadpage` hoặc `/GCD-mkt-ladipage` → dựng trang thu lead / bán hàng.
+8. `/GCD-mkt-hook-video` + `/GCD-mkt-content-30-ngay` → sản xuất nội dung đều đặn.
+9. `/GCD-sale-dinh-gia-offer` + `/GCD-sale-ke-hoach-loi-nhuan` → chốt mô hình tiền.
 
 Mỗi bước đều để lại kết quả trong `output/` — bộ não của bạn lớn dần theo thời gian.
 
@@ -56,7 +56,7 @@ Mỗi bước đều để lại kết quả trong `output/` — bộ não của
 
 ## 4. Mở rộng bộ não
 
-- **Thêm skill mới:** *"Tạo skill mới về …"* — Claude theo chuẩn `gcd-AIOS-tao-skill` (đặt tên `gcd-<lĩnh-vực>-<công-dụng>`, grounded từ chuyên gia gốc).
+- **Thêm skill mới:** *"Tạo skill mới về …"* — Claude theo chuẩn `GCD-AIOS-tao-skill` (đặt tên `GCD-<lĩnh-vực>-<công-dụng>`, grounded từ chuyên gia gốc).
 - **Sửa quy ước:** cứ bảo Claude cập nhật `CLAUDE.md` — đó là "hiến pháp" của bộ não, nên tiến hóa theo bạn.
 
 ---

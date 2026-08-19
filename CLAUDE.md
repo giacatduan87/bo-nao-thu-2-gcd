@@ -155,9 +155,9 @@ Bộ não này đi kèm **~20 skill marketing & bán hàng** trong `.claude/skil
 
 | Cần khóa | Skill dùng đến | Không có thì sao |
 |---|---|---|
-| `YOUTUBE_API_KEY` | `gcd-mkt-research-youtube`, `gcd-mkt-shorts-*` | Bỏ qua phần lấy số liệu YouTube |
-| `HEYZINE_API_KEY` + `HEYZINE_CLIENT_ID` | `gcd-mkt-ebook-sach-lat` (bước xuất sách lật) | Vẫn tạo được ebook + PDF, chỉ thiếu bản flipbook |
-| `LARK_BASE_TOKEN` (tùy chọn) | các skill `gcd-sale-*` (nếu muốn lưu kế hoạch vào Lark Base) | Kết quả vẫn lưu đầy đủ ở `output/` dạng markdown |
+| `YOUTUBE_API_KEY` | `GCD-mkt-research-youtube`, `GCD-mkt-shorts-*` | Bỏ qua phần lấy số liệu YouTube |
+| `HEYZINE_API_KEY` + `HEYZINE_CLIENT_ID` | `GCD-mkt-ebook-sach-lat` (bước xuất sách lật) | Vẫn tạo được ebook + PDF, chỉ thiếu bản flipbook |
+| `LARK_BASE_TOKEN` (tùy chọn) | các skill `GCD-sale-*` (nếu muốn lưu kế hoạch vào Lark Base) | Kết quả vẫn lưu đầy đủ ở `output/` dạng markdown |
 
 > **Nguyên tắc bảo mật:** mọi khóa/token/mật khẩu chỉ nằm trong `.env` (đã được `.gitignore` bỏ qua). **Tuyệt đối không** ghi khóa thẳng vào skill, wiki, hay output. Khi chia sẻ bộ não cho người khác, chỉ chia phần khung — không chia `.env`.
 
@@ -169,4 +169,4 @@ Bộ não này đi kèm **~20 skill marketing & bán hàng** trong `.claude/skil
 - Giữ trang súc tích, có cấu trúc, liên kết tốt.
 - Khi nghi ngờ về cấu trúc hay quy ước, hỏi bạn rồi cập nhật chính file `CLAUDE.md` này.
 - Ngôn ngữ mặc định: **Tiếng Việt**.
-- **Tạo skill mới:** theo skill `gcd-AIOS-tao-skill` — đặt tên `gcd-<lĩnh-vực>-<công-dụng>` (`mkt-` marketing · `sale-` bán hàng · `AIOS-` vận hành), và grounded từ kiến thức guru gốc theo khung SKILL.md chuẩn. Đọc skill đó trước khi tạo/đổi tên bất kỳ skill nào.
+- **Tạo skill mới:** theo skill `GCD-AIOS-tao-skill` — đặt tên `GCD-<lĩnh-vực>-<công-dụng>` (`mkt-` marketing · `sale-` bán hàng · `AIOS-` vận hành), và grounded từ kiến thức guru gốc theo khung SKILL.md chuẩn. Đọc skill đó trước khi tạo/đổi tên bất kỳ skill nào.

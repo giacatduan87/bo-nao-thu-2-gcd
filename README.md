@@ -53,7 +53,7 @@ Nếu muốn dùng các skill cần khóa (research YouTube, xuất sách lật,
 3. Xong! Giờ bạn có thể:
    - **Thả file** (bài viết, PDF, video, ảnh) vào thư mục `raw/` rồi bảo: *"Nạp nguồn mới trong raw/"*.
    - **Hỏi** bất cứ điều gì: *"Tổng hợp giúp tôi về chủ đề X từ wiki"*.
-   - **Gọi skill**: gõ `/` để thấy danh sách, ví dụ `/gcd-mkt-hook-video` để viết hook video.
+   - **Gọi skill**: gõ `/` để thấy danh sách, ví dụ `/GCD-mkt-hook-video` để viết hook video.
 
 Mọi kết quả AI làm ra được lưu tự động trong `output/`.
 
