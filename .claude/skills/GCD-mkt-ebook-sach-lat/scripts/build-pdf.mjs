@@ -6,8 +6,8 @@
 //   book_subtitle:  Phụ đề dưới tiêu đề
 //   book_author:    Tên tác giả
 //   book_ribbon:    Dòng chữ nhỏ phía trên tiêu đề (vd "EBOOK PHÁT TRIỂN BẢN THÂN")
-//   brand_word1:    Nửa đầu wordmark logo (điền tên thương hiệu CỦA BẠN)
-//   brand_word2:    Nửa sau wordmark logo (điền tên thương hiệu CỦA BẠN)
+//   brand_word1:    Nửa đầu wordmark. KHÔNG được render ở bản này (logo vẽ bằng ẢNH) — giữ cho tài liệu.
+//   brand_word2:    Nửa sau wordmark. Cũng không được render — xem brand_word1.
 //   brand_tagline:  Dòng chữ THÊM dưới ảnh logo. Mặc định TRỐNG — để trống nếu logo đã in sẵn tagline.
 //
 // QUY ƯỚC NỘI DUNG:
@@ -36,13 +36,13 @@ const CFG = {
   subtitle: fm.book_subtitle || "",
   author:   fm.book_author   || fm.author || "TÊN TÁC GIẢ",
   ribbon:   fm.book_ribbon   || "E B O O K",
-  w1:       fm.brand_word1   || "TÊN",
-  w2:       fm.brand_word2   || "THƯƠNG HIỆU",
+  w1:       fm.brand_word1   || "HỘI",
+  w2:       fm.brand_word2   || "CHỦ TƯỚNG",
   tagline:  fm.brand_tagline || "",
 };
 const OUT = process.argv[3] || (SRC.replace(/\.md$/, "") + ".pdf");
 
-/* ---------- LOGO thương hiệu CỦA BẠN (ảnh thật, nhúng base64) ----------
+/* ---------- LOGO thương hiệu (ảnh thật, nhúng base64) ----------
    white = bản trắng (nền tối: bìa, trang cuối) · dark = bản đen (nền sáng: trang phân Phần).
    Đặt 2 file trong  ../assets/  : logo-thuong-hieu-white.png · logo-thuong-hieu-dark.png  */
 const ASSETS = path.join(import.meta.dirname, "..", "assets");

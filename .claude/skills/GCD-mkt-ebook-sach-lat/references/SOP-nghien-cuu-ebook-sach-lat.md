@@ -46,8 +46,8 @@ book_title: "TIÊU ĐỀ LỚN|XUỐNG DÒNG [CỤM TÔ VÀNG]"   # "|" = xuốn
 book_subtitle: "Phụ đề một dòng"
 book_author: "Tên của bạn"
 book_ribbon: "E B O O K   P H Á T   T R I Ể N   B Ả N   T H Â N"
-brand_word1: "TÊN"
-brand_word2: "THƯƠNG HIỆU"
+brand_word1: "HỘI"        # không được render ở bản này
+brand_word2: "CHỦ TƯỚNG"  # không được render ở bản này
 brand_tagline: ""          # để trống nếu logo đã in sẵn tagline
 ---
 ```

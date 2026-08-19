@@ -80,7 +80,7 @@ bash "<thư-mục-bộ-não>/.claude/skills/GCD-mkt-ebook-sach-lat/scripts/heyzi
 - **Heyzine 422 "pdf required"**: gửi JSON → sai; phải **form-urlencoded**. **500 "Input data error"**: do thêm `title`/`t` → chỉ truyền `pdf`+`k`. **"-100 Invalid api key"**: thiếu `k=client_id` hoặc để k=key đầy đủ.
 - **PDF phải công khai** cho Heyzine fetch: Lark URL (login) và <domain-cua-ban> (WAF 403) đều hỏng → host <domain-cua-ban> qua Novamira.
 - **Heyzine cache theo URL**: sau khi overwrite cùng URL PDF (vd đổi logo), gọi lại cùng URL ra **bản cũ**. Ép render mới bằng cache-buster `?v=2` trên tham số pdf → flipbook id/URL mới (nhớ cập nhật link đã nhúng ở Wiki/index/log).
-- **Logo**: thả logo CỦA BẠN vào `assets/` với đúng 2 tên `logo-thuong-hieu-white.png` (dùng trên nền tối) và `logo-thuong-hieu-dark.png` (dùng trên nền sáng). Bản phát hành không kèm logo sẵn — thiếu file thì PDF vẫn build bình thường, chỉ là không có logo.
+- **Logo**: bản phát hành **đã kèm sẵn** logo Gia Cát Duẩn trong `assets/` — mọi ebook dựng ra đều mang thương hiệu này, không cần làm gì thêm. Hai file: `logo-thuong-hieu-white.png` (dùng trên nền TỐI — bìa, trang cuối) và `logo-thuong-hieu-dark.png` (dùng trên nền SÁNG — trang phân Phần). Muốn dùng logo khác thì ghi đè đúng 2 tên đó; xoá đi thì PDF vẫn build, chỉ là không có logo.
 - **PDF đích bị khoá** (đang mở xem) → script tự rớt sang tên `-CTA.pdf`; nhắc người dùng đóng bản xem để gộp 1 tên.
 
 ## Output
