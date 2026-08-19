@@ -147,7 +147,7 @@ Khi bạn đặt câu hỏi:
 
 ## 9. Bộ kỹ năng (Skills) & cấu hình
 
-Bộ não này đi kèm **~20 skill marketing & bán hàng** trong `.claude/skills/`. Gõ `/` trong Claude Code để thấy danh sách, hoặc xem `HƯỚNG-DẪN-SỬ-DỤNG.md`.
+Bộ não này đi kèm **24 skill marketing & bán hàng** trong `.claude/skills/`. Gõ `/` trong Claude Code để thấy danh sách, hoặc xem `HƯỚNG-DẪN-SỬ-DỤNG.md`.
 
 **Phần lớn skill chạy được NGAY, không cần cấu hình gì** — chúng chỉ đọc nguồn, suy nghĩ, rồi viết kết quả vào `output/`.
 

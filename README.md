@@ -1,6 +1,6 @@
 # BỘ NÃO THỨ 2 — Cài trong 5 phút
 
-Đây là **bộ não thứ 2** chuẩn Gia Cát Duẩn: một wiki tri thức do AI (Claude) tự biên tập, tự tích lũy, cộng **~20 kỹ năng marketing & bán hàng** dùng được ngay.
+Đây là **bộ não thứ 2** chuẩn Gia Cát Duẩn: một wiki tri thức do AI (Claude) tự biên tập, tự tích lũy, cộng **24 kỹ năng marketing & bán hàng** dùng được ngay.
 
 Bạn **không cần lập trình**. Chỉ cần làm 4 bước dưới đây.
 
@@ -62,7 +62,7 @@ Mọi kết quả AI làm ra được lưu tự động trong `output/`.
 ## Bộ này có gì?
 
 - **Cấu trúc wiki bền vững** (`raw/` → `wiki/` → `output/`) — đọc `CLAUDE.md` để hiểu triết lý.
-- **~20 skill** marketing & bán hàng — xem danh sách trong `HƯỚNG-DẪN-SỬ-DỤNG.md`.
+- **24 skill** marketing & bán hàng — xem danh sách trong `HƯỚNG-DẪN-SỬ-DỤNG.md`.
 - Đã **bóc sạch** mọi token, mật khẩu, tài khoản cá nhân của người tạo. An toàn để dùng và chia sẻ khung.
 
 ## Cần trợ giúp?
