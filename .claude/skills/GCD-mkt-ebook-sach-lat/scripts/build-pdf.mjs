@@ -6,9 +6,9 @@
 //   book_subtitle:  Phụ đề dưới tiêu đề
 //   book_author:    Tên tác giả
 //   book_ribbon:    Dòng chữ nhỏ phía trên tiêu đề (vd "EBOOK PHÁT TRIỂN BẢN THÂN")
-//   brand_word1:    Nửa đầu wordmark logo (mặc định HỘI)
-//   brand_word2:    Nửa sau wordmark logo (mặc định CHỦ TƯỚNG)
-//   brand_tagline:  Tagline dưới logo (mặc định QUÂN SƯ CỦA DOANH NGHIỆP MỘT NGƯỜI)
+//   brand_word1:    Nửa đầu wordmark logo (điền tên thương hiệu CỦA BẠN)
+//   brand_word2:    Nửa sau wordmark logo (điền tên thương hiệu CỦA BẠN)
+//   brand_tagline:  Dòng chữ THÊM dưới ảnh logo. Mặc định TRỐNG — để trống nếu logo đã in sẵn tagline.
 //
 // QUY ƯỚC NỘI DUNG:
 //   - "# PHẦN ..."  -> trang phân Phần riêng có logo.
@@ -34,21 +34,21 @@ const fm = frontmatter(raw);
 const CFG = {
   title:    fm.book_title    || "EBOOK",
   subtitle: fm.book_subtitle || "",
-  author:   fm.book_author   || fm.author || "Gia Cát Duẩn",
+  author:   fm.book_author   || fm.author || "TÊN TÁC GIẢ",
   ribbon:   fm.book_ribbon   || "E B O O K",
-  w1:       fm.brand_word1   || "HỘI",
-  w2:       fm.brand_word2   || "CHỦ TƯỚNG",
-  tagline:  fm.brand_tagline || "QUÂN SƯ CỦA DOANH NGHIỆP MỘT NGƯỜI",
+  w1:       fm.brand_word1   || "TÊN",
+  w2:       fm.brand_word2   || "THƯƠNG HIỆU",
+  tagline:  fm.brand_tagline || "",
 };
 const OUT = process.argv[3] || (SRC.replace(/\.md$/, "") + ".pdf");
 
-/* ---------- LOGO Hội Chủ Tướng (ảnh thật, nhúng base64) ----------
+/* ---------- LOGO thương hiệu CỦA BẠN (ảnh thật, nhúng base64) ----------
    white = bản trắng (nền tối: bìa, trang cuối) · dark = bản đen (nền sáng: trang phân Phần).
-   Đặt 2 file trong  ../assets/  : logo-hoichutuong-white.png · logo-hoichutuong-dark.png  */
+   Đặt 2 file trong  ../assets/  : logo-thuong-hieu-white.png · logo-thuong-hieu-dark.png  */
 const ASSETS = path.join(import.meta.dirname, "..", "assets");
-const logoData = v => { const f = path.join(ASSETS, v === "dark" ? "logo-hoichutuong-dark.png" : "logo-hoichutuong-white.png"); return fs.existsSync(f) ? "data:image/png;base64," + fs.readFileSync(f).toString("base64") : ""; };
+const logoData = v => { const f = path.join(ASSETS, v === "dark" ? "logo-thuong-hieu-dark.png" : "logo-thuong-hieu-white.png"); return fs.existsSync(f) ? "data:image/png;base64," + fs.readFileSync(f).toString("base64") : ""; };
 const LOGO_WHITE = logoData("white"), LOGO_DARK = logoData("dark");
-const logo = (sz, variant = "white") => { const src = variant === "dark" ? LOGO_DARK : LOGO_WHITE; return `<div class="logo ${sz}">${src ? `<img class="logo-img" src="${src}" alt="Hội Chủ Tướng">` : ""}${CFG.tagline ? `<div class="wmsub">${CFG.tagline}</div>` : ""}</div>`; };
+const logo = (sz, variant = "white") => { const src = variant === "dark" ? LOGO_DARK : LOGO_WHITE; return `<div class="logo ${sz}">${src ? `<img class="logo-img" src="${src}" alt="Logo thương hiệu">` : ""}${CFG.tagline ? `<div class="wmsub">${CFG.tagline}</div>` : ""}</div>`; };
 
 /* ---------- Markdown -> HTML ---------- */
 const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

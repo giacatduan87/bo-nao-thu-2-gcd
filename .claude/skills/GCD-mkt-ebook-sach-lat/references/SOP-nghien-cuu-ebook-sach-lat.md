@@ -44,11 +44,11 @@ tags: [ebook, ...]
 # cấu hình bìa cho build-pdf.mjs:
 book_title: "TIÊU ĐỀ LỚN|XUỐNG DÒNG [CỤM TÔ VÀNG]"   # "|" = xuống dòng; [..] = tô vàng kim
 book_subtitle: "Phụ đề một dòng"
-book_author: "Gia Cát Duẩn"
+book_author: "Tên của bạn"
 book_ribbon: "E B O O K   P H Á T   T R I Ể N   B Ả N   T H Â N"
-brand_word1: "HỘI"
-brand_word2: "CHỦ TƯỚNG"
-brand_tagline: "QUÂN SƯ CỦA DOANH NGHIỆP MỘT NGƯỜI"
+brand_word1: "TÊN"
+brand_word2: "THƯƠNG HIỆU"
+brand_tagline: ""          # để trống nếu logo đã in sẵn tagline
 ---
 ```
 
