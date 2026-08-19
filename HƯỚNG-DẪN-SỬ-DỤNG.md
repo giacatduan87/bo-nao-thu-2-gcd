@@ -24,7 +24,7 @@ Gõ `/` để thấy danh sách, hoặc gõ thẳng tên. Ví dụ:
 > `/GCD-mkt-hook-video` → viết hook video chống lướt
 > `/GCD-sale-dinh-gia-offer` → định giá & đóng gói offer
 
-Xem đầy đủ 23 skill trong `.claude/skills/index.md`.
+Xem đầy đủ 24 skill trong `.claude/skills/index.md`.
 
 > **Lần đầu dùng bộ não?** Chạy `/GCD-AIOS-hoan-tat-ho-so-doanh-nghiep` trước — nó điền hồ sơ doanh nghiệp (định vị, ICP, giọng thương hiệu, sản phẩm) vào `wiki/` để mọi skill sau đó không phải hỏi lại từ đầu.
 
@@ -39,6 +39,9 @@ Xem đầy đủ 23 skill trong `.claude/skills/index.md`.
 5. `/GCD-mkt-chan-dung-dau-suong` → hiểu khách hàng, biết nên làm content gì.
 6. `/GCD-mkt-lead-magnet` → chọn 1 mồi câu để thu khách.
 7. `/GCD-mkt-leadpage` hoặc `/GCD-mkt-ladipage` → dựng trang thu lead / bán hàng.
+   Muốn đi tới tận nơi *lead nằm trong bảng và thư đã vào hộp thư khách* thì dùng
+   `/GCD-mkt-leadpage-ebook-tron-goi` — kèm 17 cái bẫy đã dính thật, đọc
+   `references/BAY-DA-DINH.md` trước khi tiêu tiền quảng cáo.
 8. `/GCD-mkt-hook-video` + `/GCD-mkt-content-30-ngay` → sản xuất nội dung đều đặn.
 9. `/GCD-sale-dinh-gia-offer` + `/GCD-sale-ke-hoach-loi-nhuan` → chốt mô hình tiền.
 

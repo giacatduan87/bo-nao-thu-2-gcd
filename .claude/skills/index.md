@@ -1,6 +1,6 @@
 # Danh mục Skill — Bộ Não Thứ 2 (chuẩn Gia Cát Duẩn)
 
-23 kỹ năng marketing, bán hàng & vận hành. Trong Claude Code gõ `/` để chọn, hoặc gõ `/tên-skill`.
+24 kỹ năng marketing, bán hàng & vận hành. Trong Claude Code gõ `/` để chọn, hoặc gõ `/tên-skill`.
 Mỗi skill được "grounded" từ kiến thức của các chuyên gia gốc trong lĩnh vực đó.
 
 ## 🎯 Marketing — Khách hàng & Nội dung
@@ -18,6 +18,7 @@ Mỗi skill được "grounded" từ kiến thức của các chuyên gia gốc 
 | `GCD-mkt-hook-video` | Viết hook "chống lướt" cho video ngắn / tiêu đề | Không |
 | `GCD-mkt-lead-magnet` | Tạo ≥20 ý tưởng mồi câu + outline chi tiết | Không |
 | `GCD-mkt-leadpage` | Viết trọn landing page thu lead (16 bước) | Không |
+| `GCD-mkt-leadpage-ebook-tron-goi` | Trọn phễu tặng ebook: copy → bìa → trang → Cloudflare + tên miền → lead vào Lark Base → thư tự gửi bằng Lark Mail | Cloudflare + Lark |
 | `GCD-mkt-ladipage` | Viết trang bán hàng chuẩn "trang WIN" 12 khối | Không |
 | `GCD-mkt-web-dich-vu` | Dựng nội dung website ngành dịch vụ chuẩn chuyển đổi | Không |
 
