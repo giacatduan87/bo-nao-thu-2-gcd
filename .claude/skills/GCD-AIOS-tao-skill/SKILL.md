@@ -20,7 +20,7 @@ tri thức gốc** chứ không bịa. Khi tạo bất kỳ skill mới nào →
 ## LUẬT 1 — ĐẶT TÊN (`GCD-` + tiền tố lĩnh vực + công dụng rõ ràng)
 
 ### 1a. Cấu trúc tên bắt buộc: `GCD-<lĩnh-vực>-<công-dụng>`
-**Mọi skill của GCD BẮT BUỘC bắt đầu bằng `GCD-`** (token sở hữu — để lọc nhanh skill của Gia Cát Duẩn
+**Mọi skill của Gia Cát Duẩn BẮT BUỘC bắt đầu bằng `GCD-`** (token sở hữu — để lọc nhanh skill của Gia Cát Duẩn
 khỏi skill global `lark-*`/built-in), rồi tới tiền tố lĩnh vực, rồi công dụng:
 
 | Lĩnh vực | Tiền tố đầy đủ | Ví dụ tên skill |
@@ -89,5 +89,5 @@ Một SKILL.md tốt cho AI gồm các phần theo thứ tự:
 - ⚠️ Đổi tên là **thao tác phá vỡ**: kéo theo tên lệnh `/slash`, đường dẫn script (vd `run-daily.ps1`), scheduled task, memory, và cross-ref giữa các skill (vd `GCD-sale-nha-may-pheu` gọi `GCD-mkt-ladipage`). → **Trình bày bản đồ đổi tên + rủi ro, hỏi người dùng trước khi đổi hàng loạt.** Áp ngay cho skill MỚI; skill cũ đổi có kiểm soát.
 
 ## Lưu ý
-- Quy ước này áp cho **skill nghiệp vụ của GCD**, KHÔNG đụng skill global `lark-*` (plugin) hay skill built-in.
+- Quy ước này áp cho **skill nghiệp vụ của Gia Cát Duẩn**, KHÔNG đụng skill global `lark-*` (plugin) hay skill built-in.
 - Tiền tố giúp người dùng & AI **lọc nhanh theo lĩnh vực** — đây là mục tiêu số 1 của luật đặt tên.

@@ -28,7 +28,7 @@ Grounded từ guru gốc (research đầy đủ ở `output/2026-06-08-research-
 
 > Đổi theme = chỉ sửa 6–8 dòng trong `:root`. Phần còn lại của template tự ăn theo (Repetition).
 
-## Brand mặc định (GCD)
+## Brand mặc định (Gia Cát Duẩn)
 - Footer `@Gia Cát Duẩn` (đổi nếu khách khác). Hashtag thương hiệu cố định: `#HoiChuTuong #GiaCatDuan` + 1–2 hashtag chủ đề.
 - KHÔNG dùng tên gốc trong nguồn — áp [[GCD-AIOS-rebrand-doi-ten]] nếu nội dung lấy từ raw.
 
